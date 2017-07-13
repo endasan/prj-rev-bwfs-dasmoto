@@ -1,0 +1,71 @@
+html {
+  font-family: Helvetica, sans-serif;
+  /*font-weight: bold; **** No need for this, or the 'p' styling*/
+}
+
+body {
+	margin: 0;
+}
+
+/*removed p selector*/
+
+header {
+  /*font-size:100px; ***/
+	font-size: 2em;
+  text-align: center;
+  color: khaki;
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg"); /*You can jsut call this 'background'*/
+}
+
+#title {
+	margin: 0;
+}
+
+h2 {
+  /*font-size:32px;*/
+  color: white;
+}
+
+img {
+	border-radius: 5px;
+}
+
+.description {
+	text-align: center;
+	padding: 0.6em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.brushes {
+  background-color: mediumspringgreen;
+}
+
+.frames {
+  background-color: lightcoral;
+}
+
+.paint {
+  background-color: skyblue;
+}
+
+/*
+**Media queries for responsive design
+**Try resizing the screen
+*/
+@media screen and (min-width: 68em) {
+	main {
+		display: flex;
+		align-items: stretch;
+	}
+	.description {
+		margin: auto;
+		/*display: inline-block;*/
+		width: 30%;
+	}
+	.height {
+		height: 5em;
+	}
+}
